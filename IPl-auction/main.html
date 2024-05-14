@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auction-container">
+    <div class="card">
+      <img src="IMG-20240512-WA0017.jpg" alt="Card Image">
+      <div class="card-overlay"></div>
+      </div>
+    <div class="amount-box">
+      <input type="number" id="amount-input" placeholder="Bidding Amount"><br><br>
+      <center>
+      <button id="set-amount-button">Set Bid</button><br><br>
+      <button id="next-button">Next</button><br><br>
+      <button id="Result-button">Result</button>
+    </center>
+       </div>
+    </div>
+    <div id="bid-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Choose a Team</h2>
+        <form id="bid-form">
+          <label for="team-select">Select a Team:</label>
+          <select id="team-select">
+            <option value="team1">Team 1</option>
+            <option value="team2">Team 2</option>
+            <option value="team2">Team 3</option>
+            <option value="team2">Team 4</option>
+            <option value="team2">Team 5</option>
+            <option value="team2">Team 6</option>
+            <option value="team2">Team 7</option>
+            <option value="team2">Team 8</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
